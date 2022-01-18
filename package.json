@@ -10,5 +10,9 @@
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-nightly": "^18.0.0-nightly.20220117"
   }
 }
