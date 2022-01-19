@@ -27,4 +27,5 @@ async function passwordGenerator(length) {
 passwordGenerator(pswdLength).then(password => {
     console.log("Password generated.")
     console.log("GENERATED PASSWORD: " + password)
+    console.log("WARNING! PASSWORD IS NOT SAVED, BE CAREFUL AND STOCK IT SOMEWHERE!!!")
 })

@@ -4,7 +4,10 @@
   "description": "Token generator based on proof of work non-environmental system. btw this kind of system should be illegal",
   "main": "token_gen.js",
   "scripts": {
-    "test": "node token_gen.js"
+    "test": "node token_gen.js",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "VELD-Dev",
   "license": "SEE LICENSE IN LICENSE",
@@ -12,6 +15,7 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
     "electron": "^16.0.7",
     "electron-nightly": "^18.0.0-nightly.20220117"
   }

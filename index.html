@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheets" href="styles/main-page.css"
+        <link rel="stylesheet" href="styles/main-page.css"
         <meta charset="UTF-8">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
         <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-        <title>Tab Name</title>
+        <title>Token Generator</title>
+
+        <!-- SCRIPTS -->
     </head>
-    <body>
-        <h1>Hello World!</h1>
-        Nous utilisons Node.js <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        et Electron <span id="electron-version"></span>.
+    <body class="body-background">
+        <h1 class="header1">Hello World!</h1>
+        <p class="paragraph-versions">
+            Nous utilisons Node.js <span id="node-version"></span>,
+            Chromium <span id="chrome-version"></span>,
+            et Electron <span id="electron-version"></span>.
+        </p>
+        <script src="preload.js"></script>
     </body>
 </html>

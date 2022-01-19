@@ -1,0 +1,19 @@
+.body-background{
+    background-color: rgb(30, 30, 30);
+}
+
+h1.header1{
+    display: block;
+    text-align: center;
+    font-family: 'Consolas' !important;
+    font-size: xx-large;
+    color: rgb(68, 201, 176);
+    margin: 5px;
+}
+p.paragraph-versions{
+    display: block;
+    text-align: center;
+    font-family: 'Consolas' !important;
+    font-size: larger;
+    color: rgb(208, 220, 139);
+}
