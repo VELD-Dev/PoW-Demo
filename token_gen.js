@@ -47,6 +47,8 @@ async function generateRandomToken(arrayLength) {
 console.log("Token generation system initialized.")
 console.log("Initializing system stats recorders...")
 console.log(`ARCH-${os.arch} RAM-${((os.totalmem - os.freemem) / 1000000).toFixed(2)}MB/${(os.totalmem / 1000000).toFixed(2)}MB CPU-${os.cpus[0]}MHz`)
+if(!fs.readFileSync("./generatedToken.json")) {
+}
 setTimeout(() => {
     console.log("Generating a token...")
     let isTokenExisting = true
