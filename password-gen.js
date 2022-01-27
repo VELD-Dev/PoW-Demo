@@ -2,7 +2,7 @@ const fs = require("fs");
 
 
 // SET PASSWORD LENGTH HERE
-const pswdLength = 16
+const pswdLength = 22
 
 
 /**
@@ -20,6 +20,7 @@ async function passwordGenerator(length) {
             let randomNum = Math.floor(Math.random() * characterScheme.length)
             pswd += characterScheme[randomNum]
         }
+        console.log("Possibilities: " + (pswdLength ** characterScheme.length).toLocaleString())
         resolve(pswd)
     })
 }

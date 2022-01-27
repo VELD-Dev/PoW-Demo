@@ -19,7 +19,7 @@ console.log("Initializing token generator system...");
 async function generateRandomToken(arrayLength) {
     const tokenScheme = "abcdefghijklmnopqrstuvwxyz.ABCDEFGHIJKLMNOPQRSRTUVWXYZ0123456789&#@!?".split("");
     console.log(tokenScheme.length);
-    let remainingPossibilities = (tokenScheme.length * 256) - arrayLength
+    let possibilities = (Math.pow(256, tokenScheme.length) - arrayLength).toLocaleString() + "\n" + (Math.pow(256, tokenScheme.length) - arrayLength)
     return new Promise((resolve, reject) => {
         let token = {
             uniqueToken: "",
@@ -39,7 +39,8 @@ async function generateRandomToken(arrayLength) {
                 };
             }
         };
-        console.log(remainingPossibilities)
+        console.log(possibilities)
+        console.log(tokenScheme.length)
         resolve(token);
     })
 }
@@ -64,4 +65,4 @@ setTimeout(() => {
         console.log(`ARCH-${os.arch} RAM-${((os.totalmem - os.freemem) / 1000000).toFixed(2)}MB/${(os.totalmem / 1000000).toFixed(2)}MB CPU-${os.cpus[0]}MHz`)
         console.log("End of Program.")
     }, 50)
-}, 5000);
+}, 1000);
